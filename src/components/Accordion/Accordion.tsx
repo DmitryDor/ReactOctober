@@ -7,7 +7,6 @@ type PropsType = {
 }
 
 export function Accordion(props: PropsType) {
-    console.log("Accordion rendering ")
 
     return (
         <div>

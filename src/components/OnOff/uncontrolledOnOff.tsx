@@ -1,42 +1,43 @@
 import React, {useState} from 'react';
 
 type PropsType = {
-    value: boolean
-    onOff: (newValue: boolean) => void
+
 }
 
-export function OnOff(props: PropsType) {
+export function UncontrolledOnOff(props: PropsType) {
 
+    let [on, setOn] = useState(true)
 
     const switchOn = () => {
-        return props.onOff(true)
+        return setOn(true)
+
     }
     const switchOff = () => {
-        return props.onOff(false)
+        return setOn(false)
+
     }
 
     let onStyle = {
         width: '100px',
         height: '30px',
-        backgroundColor: props.value ? 'green' : ''
+        backgroundColor: on? 'green': ''
     }
     let offStyle = {
         width: '100px',
         height: '30px',
-        backgroundColor: props.value ? '' : 'red',
+        backgroundColor: on? '': 'red',
         marginLeft: '5px'
     }
     let indicatorStyle = {
         width: '25px',
         height: '25px',
         borderRadius: '12px',
-        backgroundColor: props.value ? 'green' : 'red',
+        backgroundColor: on? 'green': 'red',
         marginLeft: '10px'
     }
 
-
     return (
-        <div>
+        <div >
             <button style={onStyle} onClick={switchOn}>On</button>
             <button style={offStyle} onClick={switchOff}>Off</button>
             <button style={indicatorStyle}>x</button>
