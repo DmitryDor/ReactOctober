@@ -4,6 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 
 import {UncontrolledOnOff} from "./uncontrolledOnOff";
+import {action} from "@storybook/addon-actions";
 
 
 
@@ -13,8 +14,5 @@ export default {
 } as Meta;
 
 
-export const ChengedOnOff = () => {
-    let[value, setValue] = useState<boolean>(true)
-    return <UncontrolledOnOff   />
-}
-
+export const OnMode = () => <UncontrolledOnOff defaultOn = {true} />
+export const OffMode = () => <UncontrolledOnOff defaultOff = {false} />

@@ -8,13 +8,13 @@ import {UncontrolledAccordion} from "./UncontrolledAccordion";
 
 
 export default {
-    title: 'UncontrolledAccordion ',
+    title: 'UncontrolledAccordion',
     component: UncontrolledAccordion,
 } as Meta;
 
 
 export const ChangeUncontrolledAccordion = () => {
     let[value, setValue] = useState<boolean>(true)
-    return <Accordion title='Changed UncontrolledAccordion' collapsed={value} onClick={setValue}/>
+    return <UncontrolledAccordion title={'UncontrolledAccordion'}/>
 }
 
