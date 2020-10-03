@@ -37,7 +37,7 @@ export function OnOff(props: PropsType) {
 
 
     return (
-        <div style={{ margin: '150px'}}>
+        <div >
             <button style={onStyle} onClick={switchOn}>On</button>
             <button style={offStyle} onClick={switchOff}>Off</button>
             <button style={indicatorStyle}>x</button>

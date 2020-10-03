@@ -7,7 +7,7 @@ type PropsType = {
 export function UncontrolledAccordion(props: PropsType) {
     console.log("Accordion rendering ")
 
-    let [collapsed, setCollapsed] = useState(true)
+    let [collapsed, setCollapsed] = useState<boolean>(false)
 
     const coll = () => {
         setCollapsed(!collapsed)

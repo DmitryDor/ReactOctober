@@ -10,7 +10,8 @@ import {UncontrolledRaiting} from "./components/Raiting/uncontrolledRaiting";
 function App() {
 
     return (
-        <div>
+        <div className={'App'}>
+            <OnOff />
             <UncontrolledRaiting/>
             <Accordion title={'controlled'} collapsed={false}/>
             <UncontrolledAccordion title={'Menu'}/>
