@@ -19,6 +19,7 @@ export function Accordion(props: PropsType) {
 type PropsTitleType = {
     title: string
     onClick: () => void
+
 }
 
 function AccordionTitle(props: PropsTitleType) {
