@@ -1,0 +1,21 @@
+.exampleSelect{
+    margin: 5px;
+}
+
+.select span.main{
+    border: 1px solid #000;
+    display: inline-block;
+    min-height: 20px;
+    min-width: 70px;
+    margin-left: 5px;
+
+}
+.items{
+    position: absolute;
+    border: 1px solid #000000;
+    margin: 5px;
+}
+.item.selected {
+    background: #1ea7fd;
+    color: white;
+}
