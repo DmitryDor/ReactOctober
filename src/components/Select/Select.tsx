@@ -53,10 +53,6 @@ export function Select(props: SelectPropsType) {
             }
         }
 
-
-
-
-
 return (
 
     <div className={styles.select} onKeyUp={onKeyUp} tabIndex={0}>

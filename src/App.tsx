@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import './App.css';
+import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 
 
 export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
 function App() {
-return <div>
-
-</div>
+    return <div>
+        <UncontrolledAccordion title={'Users'}/>
+    </div>
 
 
 }
