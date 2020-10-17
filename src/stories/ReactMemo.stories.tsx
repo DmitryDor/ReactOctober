@@ -30,8 +30,8 @@ export const Example1 = () => {
             'Sveta' + new Date().getTime()
         ]
         setUsers(newUsers)
-
     }
+
     return <>
         <button onClick={() => setCounter(counter + 1)}>+</button>
         <button onClick={addUser}>Add User</button>
