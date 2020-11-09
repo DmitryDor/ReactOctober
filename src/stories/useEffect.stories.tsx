@@ -50,18 +50,20 @@ export const SetTimeoutExample = () => {
         }, 3000)
     }, [counter])*/
 
-   /* useEffect(() => {
+    useEffect(() => {
         setInterval(() => {
             console.log('tick: ' + counter)
 
             setCounter( (state) => state + 1)
         }, 1000)
 
-    }, [])*/
+    }, [])
+
 
 
     return (
         <>
+
            {/* {fake}
             <button onClick={() => setFake(fake + 1)}>fake</button>
             Hello,
